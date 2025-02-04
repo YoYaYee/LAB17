@@ -21,7 +21,7 @@ int main(){
 	for(int i=0; i < nB; i++) cin >> B[i];
 	
 	C = new int*[nA];
-	for(int i=0; i < nA; i++) C[i] = new int[nA];
+	for(int i=0; i < nA; i++) C[i] = new int[nB];
 	
 	for(int i=0; i < nA; i++){
 		for(int j=0; j < nB; j++) {
@@ -45,7 +45,7 @@ int main(){
 	}
      delete[] A;
 	 delete[] B;
-	 for(int i = 0; i < nA*nB;i++) 
+	 for(int i = 0; i < nA;i++) 
 		delete[] C[i];
 	delete[] C;
 	return 0;
